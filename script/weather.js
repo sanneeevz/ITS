@@ -41,6 +41,7 @@ function changeBackground(response) {
     var copy = '';
 
     // detect if the weather description contains string
+    // change background color and text
     if (weather.includes('thunderstorm')) {
       document.body.style = 'background: #191970';
       copy = 'Het is geen goed weer om te landen. Haal lekker wat sushi in het restaurant. Zoek maar alvast wat lekkers uit.';
@@ -76,7 +77,7 @@ function showAdvice(response) {
   weatherBox.innerHTML = degC + "&#176;C <br>";
 }
 
-
+// show tempature
 function onAPIError(error) {
   console.error('Request failed', error);
   var weatherBox = document.getElementById('temperature');
