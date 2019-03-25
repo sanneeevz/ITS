@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Coda:800');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:700');
 
 .grid-container{
 	display: grid;
@@ -42,19 +43,29 @@ h1 {
 }
 
 .image {
-	width: 300px;
+	width: 200px;
 }
 
 /* WEATHER BOX2 */
 
 h2 {
-	font-size: 25px; /*DOET HET NIET?*/
+	font-size: 20px;
 	font-family: 'Coda';	
 }
 
 .box-2 {
 	grid-area: weather;
 	background-color: black;	
+}
+
+#temperature {
+	font-size: 40px;
+	font-family: 'Orbitron';
+}
+
+#weather {
+	font-family: 'Orbitron';
+	font-size: 18px;
 }
 
 /* SUSHI BOX3 */
@@ -83,7 +94,7 @@ h2 {
 	}
 
 	h2 {
-		font-size: 15px;
+		font-size: 25px;
 	}
 
 	.box-2 {
@@ -92,6 +103,10 @@ h2 {
 
 	.box-3 {
 		height: auto;
+	}
+
+	.image {
+		width: 200px;
 	}
 
 }
@@ -104,8 +119,7 @@ h2 {
 
 		grid-template-areas:
 				"header header"
-				"weather sushi"
-				"meter meter";
+				"weather sushi";
 	}
 
 	.box-1 {
@@ -121,5 +135,18 @@ h2 {
 		margin-bottom: 0px;
 		width: 500px
 	}
+
+	#temperature {
+	font-size: 50px;
+	}
+
+	#weather {
+		font-size: 25px;
+	}
+
+	.image {
+		width: 300px;
+	}
+
 
 }

@@ -36,7 +36,7 @@ function landingReady(response) {
   if (weather.includes('thunderstorm')) {
     document.getElementById('landing').innerHTML = 'Het is geen goed weer om te landen. Haal lekker wat sushi in het restaurant. Zoek maar alvast wat lekkers uit.';
   } else if (weather.includes('drizzle')) {
-    document.getElementById('landing').innerHTML = 'Het miezert een beetje, maar dat is geen probleem om te landen. Bijn zijn we weer op aarde. Pak je paraplu maar vast, dan kan je zo lekker eten in het sushi restaurant naast de land plaats. Hiernaast kun je alvast kijken wat je lekker lijkt.';
+    document.getElementById('landing').innerHTML = 'Het miezert een beetje, maar dat is geen probleem om te landen. Bijn zijn we weer op aarde. Pak je paraplu maar vast, dan kan je zo lekker eten in het sushi restaurant naast de land plaats. Zoek maar alvast wat lekkers uit.';
   } else if (weather.includes('rain')) {
     document.getElementById('landing').innerHTML = 'Het regent, maar dat is geen probleem om te landen. Bijna zijn we weer op aarde. Pak je paraplu maar vast, dan kan je zo lekker eten in het sushi restaurant naast de land plaats. Zoek maar alvast wat lekkers uit.';
   } else if (weather.includes('snow')) {
