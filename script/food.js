@@ -1,6 +1,7 @@
 function getFoodAPIdata() {
 
-  var apiKey ="0343ff29ebb6f17b67d751e057f36065";
+  // 0343ff29ebb6f17b67d751e057f36065
+  var apiKey ="e5a2e83fad6569181fb40ef1cb7fd9ab";
 
   // construct request
   var request = 'https://www.food2fork.com/api/search?key='+ apiKey +'&q=sushi';
@@ -28,10 +29,12 @@ function getFoodAPIdata() {
 
 function showRecipe(response) {
 
+  // var get more till it's five
   for (var i = 0; i < 5; i++) {
     
-    console.log(response.recipes[i]);
+    //console.log(response.recipes[i]);
 
+    // put's title + url + image in id recipe
     document.getElementById('recipe').innerHTML += 
         '<strong>'+ response.recipes[i].title +'</strong> <br>' 
         + '<a href="'+ response.recipes[i].source_url +'">'
